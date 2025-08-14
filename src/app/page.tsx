@@ -1,5 +1,11 @@
+import Container from "@/app/_components/video/Container";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Container />
+    </div>
+  );
 };
 
 export default Home;

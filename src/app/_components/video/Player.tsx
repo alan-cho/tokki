@@ -2,12 +2,12 @@
 
 import ReactPlayer from "react-player";
 
-const Player = ({ url }: { url: string }) => {
+const Player = ({ videoId }: { videoId: string }) => {
   return (
     <div className="relative h-full w-full">
-      {url && (
+      {videoId && (
         <ReactPlayer
-          src={url}
+          src={`https://www.youtube.com/watch?v=${videoId}`}
           controls
           width="50%"
           height="50%"

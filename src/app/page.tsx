@@ -1,16 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Container from "@/app/_components/video/Container";
 
-const Home = () => {
-  return (
-    <div className="flex h-full">
-      <div className="flex h-full flex-1 flex-col items-center">
-        <Container />
-      </div>
-      <div className="flex h-full flex-1 flex-col items-center">
-        Transcript goes here
-      </div>
-    </div>
-  );
-};
+export default function Home() {
+  const [videoId, setVideoId] = useState<string>("M7lc1UVf-VE");
 
-export default Home;
+  return (
+    <main className="flex min-h-screen">
+      <Container videoId={videoId} setVideoId={setVideoId} />
+    </main>
+  );
+}

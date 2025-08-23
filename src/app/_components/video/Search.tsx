@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const Search = ({ setUrl }: { setUrl: (url: string) => void }) => {
+const Search = ({ setVideoId }: { setVideoId: (videoId: string) => void }) => {
   const [input, setInput] = useState("");
   return (
     <div>
@@ -12,7 +12,7 @@ const Search = ({ setUrl }: { setUrl: (url: string) => void }) => {
         onChange={(e) => setInput(e.target.value)}
         placeholder="Enter YouTube URL"
       />
-      <button onClick={() => setUrl(input)}>Search</button>
+      <button onClick={() => setVideoId(input)}>Search</button>
     </div>
   );
 };

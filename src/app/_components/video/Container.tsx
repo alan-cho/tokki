@@ -8,7 +8,7 @@ const Container = () => {
   const [url, setUrl] = useState<string>("");
 
   return (
-    <div>
+    <div className="flex h-full flex-col">
       <Search setUrl={setUrl} />
       <Player url={url} />
     </div>
